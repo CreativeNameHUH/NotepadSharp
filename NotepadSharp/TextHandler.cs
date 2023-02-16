@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Windows;
+using System.Windows.Controls;
+using System.IO;
 
 namespace NotepadSharp
 {
@@ -11,7 +14,6 @@ namespace NotepadSharp
         
         public TextHandler()
         {
-            
         }
 
         public static TextHandler GetTextHandler()
@@ -21,5 +23,6 @@ namespace NotepadSharp
 
             return _instance;
         }
+        
     }
 }
