@@ -10,13 +10,22 @@
         <StackPanel Height="430" Width="780">
             <TextBox 
                     Name="NotepadTextBox" 
-                    Height="425" 
-                    Width="775" 
+                    Height="380" 
+                    Width="780" 
                     VerticalScrollBarVisibility="Auto" 
                     HorizontalScrollBarVisibility="Auto"
                     TextWrapping="Wrap"
                     TextChanged="NotepadTextBox_OnTextChanged">
             </TextBox>
+            <Button
+                Name="SaveFile" 
+                Content="Save File"
+                Click="OnButtonPressed"
+                Height="20"
+                Width="80"
+                VerticalAlignment="Bottom"   
+                HorizontalAlignment="Right">   
+            </Button>
         </StackPanel>
     </Grid>
 </Window>

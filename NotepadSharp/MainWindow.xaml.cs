@@ -12,18 +12,28 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace NotepadSharp
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+
     public partial class MainWindow : Window
     {
         private readonly TextHandler _textHandler;
         
+        private void OnButtonPressed(object sender, RoutedEventArgs e)
+        {
+            string data = NotepadTextBox.Text;            
+            File.WriteAllText("notepad.txt", data);
+            MessageBox.Show("File saved successfully.");
+        }
         public MainWindow()
         {
+            
+            
             InitializeComponent();
             
             _textHandler = TextHandler.GetTextHandler();
