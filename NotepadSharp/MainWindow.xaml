@@ -18,7 +18,7 @@
                     TextChanged="NotepadTextBox_OnTextChanged">
             </TextBox>
             <Button
-                Name="SaveFile" 
+                Name="SaveFileButton" 
                 Content="Save File"
                 Click="OnButtonPressed"
                 Height="20"
